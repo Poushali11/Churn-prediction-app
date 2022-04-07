@@ -12,7 +12,7 @@ pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 
-@st.cache()
+
 # defining the function which will make the prediction using the data which the user inputs
 def prediction(Age,Gender,Income, Balance,Vintage,Transaction_Status,Product_Holdings,Credit_Card,Credit_Category):
     # Pre-processing user input
